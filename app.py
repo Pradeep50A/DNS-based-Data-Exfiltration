@@ -1,3 +1,4 @@
+import math
 import re
 import base64
 import os
@@ -23,9 +24,6 @@ def is_harmful(data):
     if re.search(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}", data):
         return True
         
-    if len(data) > 12 and calculate_entropy(data) > 3.8:
-        return True
-        
     return False
 
 def simulate_exfiltration(data):
@@ -33,7 +31,7 @@ def simulate_exfiltration(data):
     fake_dns_query = f"{encoded[:63]}.ns1.internal-node.net"
     log_filename = "dns_log.txt"
     
-    for _ in range(5):
+    for attempt in range(5):
         try:
             with open(log_filename, "a", encoding="utf-8") as f:
                 f.write(f"[{datetime.now()}] DNS_QUERY: {fake_dns_query} | DATA: {data}\n")
