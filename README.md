@@ -48,13 +48,6 @@ my password is 1234
 ```
 Request processed
 ```
-
-**Logged:**
-
-```
-bXkgcGFzc3dvcmQgaXMgMTIzNA==.attacker.com
-```
-
 ---
 
 ## Tech Used
