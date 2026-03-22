@@ -60,4 +60,3 @@ bXkgcGFzc3dvcmQgaXMgMTIzNA==.attacker.com
 ## Tech Used
 
 * Python
-* ---
