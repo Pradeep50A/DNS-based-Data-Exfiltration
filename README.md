@@ -1,4 +1,4 @@
-# DNS Data Exfiltration Detection 
+# DNS Data Exfiltration  
 ## Overview
 
 This project detects sensitive input and simulates DNS-based data exfiltration using a blind (out-of-band) approach.
